@@ -9,7 +9,8 @@
 body {
     background-color: hsl(36, 100%, 99%);
    
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    position: relative;
 }
 
 nav {
@@ -26,8 +27,9 @@ nav {
   object-fit: fill;
 }
 
-.nav-right > svg {
-    object-fit: fill;
+.nav-right > button {
+    border: none;
+    cursor: pointer;
 }
 
 .banner-pic {
@@ -164,12 +166,34 @@ h1 {
     height: 175px;
 }
 
+.menu-popup {
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    left: 35%;
+    top: 0;
+    background-color: hsl(36, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+}
 
+.menu-popup > ul {
+    list-style: none;
+    margin-top: 50px;
+}
+.menu-popup > ul > li {
+    margin: 20px;
+    font-weight: 500;
+}
 
-/*
- Home
-      New
-      Popular
-      Trending
-      Categories
- */
+.menu-popup > button {
+    border: none;
+    background-color: hsl(36, 100%, 99%);
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.not-active {
+    display: none;
+}
+

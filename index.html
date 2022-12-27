@@ -16,6 +16,21 @@
 </head>
 
 <body>
+  <div class="menu-popup not-active">
+    <button class="close-button" id="close-button"><svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#00001A" fill-rule="evenodd">
+          <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+          <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+        </g>
+      </svg></button>
+    <ul>
+      <li> Home</li>
+      <li> New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+  </div>
   <nav>
     <div class="nav-left"><svg width="65" height="40" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -23,12 +38,15 @@
           fill="#00001A" />
       </svg></div>
     <div class="nav-right">
-      <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
-        <g fill="#00001A" fill-rule="evenodd">
-          <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
-          <path d="M0 0h40v3H0z" />
-        </g>
-      </svg>
+      <button id="menu">
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#00001A" fill-rule="evenodd">
+            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+            <path d="M0 0h40v3H0z" />
+          </g>
+        </svg>
+      </button>
+
     </div>
 
   </nav>
@@ -131,6 +149,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
