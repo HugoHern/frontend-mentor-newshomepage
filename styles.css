@@ -25,7 +25,7 @@ nav {
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 640px){
     .nav-list {
         display: none;
     }
@@ -136,6 +136,7 @@ h1 {
     min-height: 100px;
     line-height: 2;
     color:  hsl(233, 8%, 79%);
+    
 }
 
 /*   TOP THREE ARTICLES SECTION   */
@@ -208,7 +209,7 @@ h1 {
 }
 
 /* CSS FOR DESKTOP SCREEN*/
-@media screen and (min-width: 600px)  {
+@media screen and (min-width: 640px)  {
 
     body {
         background-color: hsl(36, 100%, 99%);
@@ -237,39 +238,54 @@ h1 {
     main > h1 {
 
         width: 30%;
+        height: 15rem;
+        margin-top: 2rem;
+        
     }
 
     .first-article {
         width: 30%;
+        height: 19rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        line-height: 1.75;
+       
+    }
+
+    .first-article > button {
+        margin-top: 3rem;
     }
     .topics {
         width: 30%;
         position: absolute;
         top: 4.3rem;
         right: 0;
-        height:40rem;
+        height:36%;
 
     }
 
-    .topics > h2 {
+    .topics-title {
         font-size: 2.5rem;
+        margin-bottom: 10px;
     }
     
     .topics > article {
-      height: 8rem;
+      height: 10rem;
       padding: 1rem;
       margin: 0;
-      min-height: 8rem;
+ 
+
     }
 
     .topics > article > h3 {
-        font-size: 20px;
-        margin-bottom: .25;
+        font-size: .8rem;
     }
     .topics > article > p {
 
-        font-size: 14px;
+        font-size: .7rem;
         padding: 0;
+        height: 50px;
+        margin-bottom: 0;
     }
   
 }
