@@ -1,10 +1,11 @@
-const menu = document.getElementById("menu");
+const menuButton = document.getElementById("menu-button");
 const closeButton = document.getElementById("close-button");
+const menuPopup = document.querySelector(".menu-popup");
 
-menu.addEventListener("click", () => {
-  console.log("menu clicked");
+menuButton.addEventListener("click", () => {
+  menuPopup.classList.remove("not-active");
 });
 
 closeButton.addEventListener("click", () => {
-  console.log("close clicked");
+  menuPopup.classList.add("not-active");
 });
