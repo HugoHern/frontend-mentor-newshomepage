@@ -126,6 +126,44 @@ h1 {
     line-height: 2;
 }
 
+/*   TOP THREE ARTICLES SECTION   */
+
+.top-three-articles {
+    min-height: 800px;
+    height: 100%;
+}
+
+.top-three-articles > article {
+    display: flex;
+}
+
+.article-content > h2 {
+    color:  hsl(233, 8%, 79%);
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.article-content > h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.article-content > p {
+    color: hsl(236, 13%, 42%);
+    line-height: 2;
+}
+
+.image {
+    margin: 20px;
+}
+
+.image > img {
+    width: 125px;
+    height: 175px;
+}
+
 
 
 /*
