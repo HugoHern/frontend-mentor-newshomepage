@@ -23,6 +23,15 @@ nav {
     padding: 1rem 1rem 1rem 1rem;
 }
 
+
+
+@media screen and (max-width: 600px){
+    .nav-list {
+        display: none;
+    }
+}
+
+
 .nav-left > svg {
   object-fit: fill;
 }
@@ -87,7 +96,7 @@ h1 {
 .topics {
     background-color: rgb(2, 2, 51);
     color: white;
-    min-height: 800px;
+  
     height: 100%;
     margin: 10px;
     display: flex;
@@ -126,6 +135,7 @@ h1 {
     height: 100%;
     min-height: 100px;
     line-height: 2;
+    color:  hsl(233, 8%, 79%);
 }
 
 /*   TOP THREE ARTICLES SECTION   */
@@ -197,3 +207,69 @@ h1 {
     display: none;
 }
 
+/* CSS FOR DESKTOP SCREEN*/
+@media screen and (min-width: 600px)  {
+
+    body {
+        background-color: hsl(36, 100%, 99%);
+    }
+    #menu-button{
+        display: none;
+    }
+    .nav-list > ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-list > ul > li {
+        margin: .5rem;
+        color: hsl(236, 13%, 42%);
+    }
+
+    .banner-pic {
+        width: 70%;
+    }
+
+    main {
+        display: flex;
+    }
+
+    main > h1 {
+
+        width: 30%;
+    }
+
+    .first-article {
+        width: 30%;
+    }
+    .topics {
+        width: 30%;
+        position: absolute;
+        top: 4.3rem;
+        right: 0;
+        height:40rem;
+
+    }
+
+    .topics > h2 {
+        font-size: 2.5rem;
+    }
+    
+    .topics > article {
+      height: 8rem;
+      padding: 1rem;
+      margin: 0;
+      min-height: 8rem;
+    }
+
+    .topics > article > h3 {
+        font-size: 20px;
+        margin-bottom: .25;
+    }
+    .topics > article > p {
+
+        font-size: 14px;
+        padding: 0;
+    }
+  
+}
