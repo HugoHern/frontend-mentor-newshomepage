@@ -59,7 +59,7 @@ main {
   
     margin-left: 25px;
     margin-right: 25px;
-    min-height: 500px;
+
     max-height: 844px;
 }
 
@@ -142,7 +142,6 @@ h1 {
 /*   TOP THREE ARTICLES SECTION   */
 
 .top-three-articles {
-    min-height: 800px;
     height: 100%;
 }
 
@@ -260,7 +259,7 @@ h1 {
         position: absolute;
         top: 4.3rem;
         right: 0;
-        height:36%;
+        height:70%;
 
     }
 
@@ -287,5 +286,32 @@ h1 {
         height: 50px;
         margin-bottom: 0;
     }
+    .top-three-articles {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .image > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .article-content {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .article-content > h2 {
+        font-size: 20px;
+    }
+    .article-content > h3 {
+        font-size: 12px;
+    }
+
+    .article-content> p {
+        font-size: 10px;
+        letter-spacing: .5;
+    }
+    
   
 }
